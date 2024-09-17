@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .b {
+    margin-top: 200px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 45px;
+    width: 120px;
+    border-radius: 75px;
+    border: 2px black solid;
+    overflow: hidden;
+    background-color: yellow;
+    .line {
+      height: 30px;
+      width: 180px;
+      margin-top: 15px;
+      z-index: 0;
+      border: 2px black solid;
+      background-image: linear-gradient(
+        rgb(28, 212, 241),
+        rgb(11, 90, 193),
+        rgb(51, 0, 255),
+        rgb(160, 17, 232),
+        rgb(233, 9, 158)
+      );
+      animation: suj 2s linear 0s infinite reverse forwards;
+    }
+  }
+  .btt {
+    position: absolute;
+    margin-top: 247px;
+    /* margin-top: 257x; */
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 75px;
+    background-color: aqua;
+  }
+}
+@keyframes suj {
+  0% {
+    transform: rotate(360deg);
+  }
+}
